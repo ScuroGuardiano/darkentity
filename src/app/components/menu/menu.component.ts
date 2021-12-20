@@ -44,7 +44,6 @@ export class MenuComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    console.dir(window.location);
     this.router.events.pipe(
       filter(val => val instanceof NavigationEnd)
     ).subscribe(event => {
