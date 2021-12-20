@@ -1,0 +1,13 @@
+<ul class="alternativex">
+  <li *ngFor="let menuItem of menu">
+    <a target="_blank" *ngIf="menuItem.href" [href]="menuItem.href">
+      {{ menuItem.caption }}
+    </a>
+    <a *ngIf="menuItem.link" [ngClass]="{ activated: menuItem.activated }" [routerLink]="menuItem.link">
+      {{ menuItem.caption }}
+    </a>
+    <ng-container *ngIf="isSeparator(menuItem)">
+      {{ menuItem.caption }}
+    </ng-container>
+  </li>
+</ul>
