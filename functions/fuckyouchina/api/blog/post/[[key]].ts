@@ -1,4 +1,4 @@
-import JsonResponse from "functions/api/json-response";
+import JsonResponse from "../../json-response";
 
 export async function onRequestGet(context: EventContext<{ DB: KVNamespace }, "key", any>) {
   const { params, env } = context;
