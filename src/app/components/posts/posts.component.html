@@ -1,0 +1,7 @@
+<div class="alternativex">
+  <ul *ngIf="posts">
+    <li *ngFor="let post of posts">
+      <a [routerLink]="removeNamespaceFromKey(post.key)">{{ post.title }}</a> &middot; <span class="date secondary">{{ post.date | date:"YYYY-MM-dd" }}</span>
+    </li>
+  </ul>
+</div>

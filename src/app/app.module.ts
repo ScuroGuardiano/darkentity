@@ -9,6 +9,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { FreedomComponent } from './routes/freedom/freedom.component';
 import { BlogComponent } from './routes/blog/blog.component';
 import { ProjectsComponent } from './routes/projects/projects.component';
+import { PostsComponent } from './components/posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProjectsComponent } from './routes/projects/projects.component';
     MenuComponent,
     FreedomComponent,
     BlogComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
