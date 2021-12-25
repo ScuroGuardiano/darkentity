@@ -80,6 +80,14 @@ body {
     h6 {
       margin-left: -.1rem;
     }
+
+    blockquote {
+      border-left: .8rem solid $secondary;
+      padding-left: 1rem;
+      margin: 0;
+      color: $secondary;
+      font-style: italic;
+    }
   }
 
   .small, &.small {
