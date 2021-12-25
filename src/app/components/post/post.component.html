@@ -1,0 +1,6 @@
+<article class="alternativex article" *ngIf="post">
+  <h1>{{ post.title }}</h1>
+  <span class="secondary">{{ post.date | date:"YYYY-MM-dd" }}</span>
+  <hr>
+  <div [innerHTML]="post.content"></div>
+</article>
