@@ -26,6 +26,7 @@ export class MenuComponent implements OnInit, OnDestroy {
     { caption: "Freedom", link: "/freedom" },
     { caption: "Blog", link: "/blog" },
     { caption: "Projects", link: "/projects" },
+    { caption: "Heavy Bin", link: "/bin" },
     { caption: "AlternativeX", link: "/alternativex" },
     { caption: "|"  },
     { caption: "Github", href: "https://github.com/ScuroGuardiano" },

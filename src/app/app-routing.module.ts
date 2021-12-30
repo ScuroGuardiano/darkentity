@@ -13,7 +13,8 @@ const routes: Routes = [
   { path: 'freedom', component: FreedomComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:key', component: BlogPostComponent },
-  { path: 'projects', component: ProjectsComponent }
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'bin', loadChildren: () => import('./dark-bin/dark-bin.module').then(m => m.DarkBinModule) }
 ];
 
 @NgModule({

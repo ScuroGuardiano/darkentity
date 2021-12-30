@@ -47,6 +47,36 @@ body {
     padding-left: .5rem;
   }
 
+  .in-medium, &.in-medium,
+  .btn-medium, &.btn-medium,
+  .sel-medium, &.sel-medium {
+    border: solid 2px $main;
+    color: $main;
+    background-color: $main-background;
+    font-size: 1.2rem;
+    padding: .3rem;
+  }
+
+  .btn-medium, &.btn-medium {
+    transition: color .2s linear, background-color .2s linear;
+    cursor: pointer;
+
+    &:hover {
+      color: $main-background;
+      background-color: $main;
+    }
+  }
+
+  .sel-medium, &.sel-medium {
+    cursor: pointer;
+
+    &:not(:focus):hover {
+      color: $main-background;
+      background-color: $main;
+    }
+  }
+
+
   .footer, &.footer {
     border-top: $main solid 1px;
     text-align: center;
