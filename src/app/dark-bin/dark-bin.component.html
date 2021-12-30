@@ -1,5 +1,5 @@
-<div class="alternativex">
-  <nav>
+<div>
+  <nav class="alternativex">
     <input class="in-medium" type="text" placeholder="Input title here...">
     <select [(ngModel)]="editorOptions.language" (change)="changeLanguage()" class="sel-medium">
       <option *ngFor="let language of availableLanguages" [value]="language.id">
@@ -9,7 +9,7 @@
     <button class="btn-medium" >Save</button>
   </nav>
   <main>
-    <h2 *ngIf="loading" class="accent-1">Loading Monaco Editor...</h2>
+    <h2 *ngIf="loading" class="accent-1 alternativex">Loading Monaco Editor...</h2>
     <ngx-monaco-editor [options]="editorOptions" [(ngModel)]="code" (onInit)="monacoLoaded($event)"></ngx-monaco-editor>
   </main>
 </div>
